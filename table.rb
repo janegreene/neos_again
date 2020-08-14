@@ -25,4 +25,16 @@ class Table
     "+-#{column_data.map { |_,col| "-"*col[:width] }.join('-+-') }-+"
   end
 
+  def rows
+    table_rows = ""
+    astroids_data.each do |astroid|
+      row = astroid.keys.map { |key| astroid[key].ljust(column_data[key][:width]) }.join(' | ')
+      table_rows += "| #{row} |\n"
+    end
+    table_rows.chomp
+  end
+
+  def make_full_table
+    "#{divider}\n#{header}\n#{rows}\n#{divider}"
+  end
 end

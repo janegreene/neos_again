@@ -49,28 +49,26 @@ class TableTest < Minitest::Test
   #
   #   assert_equal expected, @table.rows
   # end
-
-
-  def test_it_can_make_full_table
-      expected =
-    "+-------------------+----------+----------------------+
-    | Name              | Diameter | Missed The Earth By: |
-    | (2019 GD4)        | 61 ft    | 911947 miles         |
-    | (2019 GN1)        | 147 ft   | 9626470 miles        |
-    | (2019 GN3)        | 537 ft   | 35277204 miles       |
-    | (2019 GB)         | 81 ft    | 553908 miles         |
-    | (2019 FQ2)        | 70 ft    | 2788140 miles        |
-    | (2011 GE3)        | 123 ft   | 35542652 miles       |
-    | (2019 FT)         | 512 ft   | 5503325 miles        |
-    | (2019 FS1)        | 134 ft   | 6241521 miles        |
-    | 141484 (2002 DB4) | 10233 ft | 37046029 miles       |
-    | (2011 GK44)       | 147 ft   | 10701438 miles       |
-    | (2012 QH8)        | 1071 ft  | 37428269 miles       |
-    | (2019 UZ)         | 51 ft    | 37755577 miles       |
-    +-------------------+----------+----------------------+"
-
-
-      assert_equal expected, @table.make_full_table
-    end
+  # 
+  # def test_it_can_make_full_table
+  #     expected =
+  #   "+-------------------+----------+----------------------+
+  #   | Name              | Diameter | Missed The Earth By: |
+  #   | (2019 GD4)        | 61 ft    | 911947 miles         |
+  #   | (2019 GN1)        | 147 ft   | 9626470 miles        |
+  #   | (2019 GN3)        | 537 ft   | 35277204 miles       |
+  #   | (2019 GB)         | 81 ft    | 553908 miles         |
+  #   | (2019 FQ2)        | 70 ft    | 2788140 miles        |
+  #   | (2011 GE3)        | 123 ft   | 35542652 miles       |
+  #   | (2019 FT)         | 512 ft   | 5503325 miles        |
+  #   | (2019 FS1)        | 134 ft   | 6241521 miles        |
+  #   | 141484 (2002 DB4) | 10233 ft | 37046029 miles       |
+  #   | (2011 GK44)       | 147 ft   | 10701438 miles       |
+  #   | (2012 QH8)        | 1071 ft  | 37428269 miles       |
+  #   | (2019 UZ)         | 51 ft    | 37755577 miles       |
+  #   +-------------------+----------+----------------------+"
+  #
+  #     assert_equal expected, @table.make_full_table
+  #   end
 
 end
